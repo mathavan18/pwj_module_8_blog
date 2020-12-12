@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
 .post-link {
@@ -40,7 +41,7 @@ header::after {
   height: 100px;
   background-color: white;
   border-radius: 50%;
-  background-image: url(/pwj-module-8-my-blog-app/exercises/assets/profile.png);
+  background-image: url(/pwj-module-8-my-blog-app/exercises/assets/profile_photo.jpg);
   background-size: cover;
 }
 .profile-name {
@@ -53,8 +54,6 @@ header::after {
 }
 
 .main {
-  background-color: yellow;
-  height: 100px;
   margin-top: 32px;
   display: flex;
   justify-content: center;
@@ -69,6 +68,57 @@ header::after {
 }
 
 .post {
+  display: flex;
+  border: 1px solid #eaecee;
+  border-radius: 8px;
+  min-height: 200px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  margin: 24px;
+}
+
+.post:hover {
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -5px, 0);
+}
+
+.post-image {
+  flex-basis: 40%;
+  background-image: url(https://images.unsplash.com/photo-1607473332998-e53c0c6f0ab0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+.post-content {
+  flex-basis: 60%;
+  padding: 24px;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #adb5bd;
+  font-weight: 600;
+}
+
+.post-title {
+  margin-top: 16px;
+  font-size: 1.5em;
+  color: #333;
+  font-weight: 600;
+}
+
+.post-title h4 {
+  margin: 0;
+}
+
+.post-text {
+  margin-top: 4px;
+  color: #494057;
+  font-weight: 400;
+  line-height: 1.4;
+  max-height: 65px;
+  overflow: hidden;
 }
 
 footer {
@@ -80,4 +130,24 @@ footer {
   align-items: center;
   margin-top: 40px;
   font-size: 14px;
+}
+
+.nav-button.new-post-button {
+  position: fixed;
+  min-width: 50px;
+  min-height: 50px;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  background-color: #004186;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.nav-button.new-post-button:hover {
+  background-color: #002349;
 }
