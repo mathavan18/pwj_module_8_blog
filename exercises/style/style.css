@@ -10,16 +10,18 @@ body {
 
 header {
   min-height: 350px;
-  background-color: blue;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/pwj-module-8-my-blog-app/exercises/assets/banner.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+.home-page {
+  background-image: url(/exercises/assets/banner.jpeg);
 }
 
 header > * {
@@ -41,7 +43,7 @@ header::after {
   height: 100px;
   background-color: white;
   border-radius: 50%;
-  background-image: url(/pwj-module-8-my-blog-app/exercises/assets/profile_photo.jpg);
+  background-image: url(/exercises/assets/profile_photo.jpg);
   background-size: cover;
 }
 .profile-name {
@@ -162,5 +164,9 @@ footer {
 }
 
 .navigation a {
+  text-decoration: none;
+}
+
+.blog-post-link {
   text-decoration: none;
 }
