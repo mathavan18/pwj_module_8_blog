@@ -20,7 +20,8 @@ header {
   position: relative;
 }
 
-.home-page {
+.home-page,
+.new-post-page header {
   background-image: url(/exercises/assets/banner.jpeg);
 }
 
@@ -46,7 +47,8 @@ header::after {
   background-image: url(/exercises/assets/profile_photo.jpg);
   background-size: cover;
 }
-.profile-name {
+.profile-name,
+.title {
   font-size: 3em;
   font-weight: bold;
 }
